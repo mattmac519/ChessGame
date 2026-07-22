@@ -1,3 +1,5 @@
+namespace ChessGame.Domain;
+
 public enum PieceColor
 {
     White,
