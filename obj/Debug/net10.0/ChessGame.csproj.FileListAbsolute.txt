@@ -1,0 +1,14 @@
+/Users/matthewmac/C# Workspace/ChessGame/bin/Debug/net10.0/ChessGame
+/Users/matthewmac/C# Workspace/ChessGame/bin/Debug/net10.0/ChessGame.deps.json
+/Users/matthewmac/C# Workspace/ChessGame/bin/Debug/net10.0/ChessGame.runtimeconfig.json
+/Users/matthewmac/C# Workspace/ChessGame/bin/Debug/net10.0/ChessGame.dll
+/Users/matthewmac/C# Workspace/ChessGame/bin/Debug/net10.0/ChessGame.pdb
+/Users/matthewmac/C# Workspace/ChessGame/obj/Debug/net10.0/ChessGame.GeneratedMSBuildEditorConfig.editorconfig
+/Users/matthewmac/C# Workspace/ChessGame/obj/Debug/net10.0/ChessGame.AssemblyInfoInputs.cache
+/Users/matthewmac/C# Workspace/ChessGame/obj/Debug/net10.0/ChessGame.AssemblyInfo.cs
+/Users/matthewmac/C# Workspace/ChessGame/obj/Debug/net10.0/ChessGame.csproj.CoreCompileInputs.cache
+/Users/matthewmac/C# Workspace/ChessGame/obj/Debug/net10.0/ChessGame.dll
+/Users/matthewmac/C# Workspace/ChessGame/obj/Debug/net10.0/refint/ChessGame.dll
+/Users/matthewmac/C# Workspace/ChessGame/obj/Debug/net10.0/ChessGame.pdb
+/Users/matthewmac/C# Workspace/ChessGame/obj/Debug/net10.0/ChessGame.genruntimeconfig.cache
+/Users/matthewmac/C# Workspace/ChessGame/obj/Debug/net10.0/ref/ChessGame.dll
