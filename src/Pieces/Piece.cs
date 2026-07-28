@@ -13,6 +13,8 @@ public abstract class Piece
         HasMoved = false;
     }
 
+    public abstract bool IsValidMovement(Position from, Position to);
+
     public void MarkAsMoved()
     {
         HasMoved = true;
