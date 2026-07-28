@@ -1,5 +1,4 @@
-namespace ChessGame.Domain;
-
+namespace ChessGame.Models;
 public sealed class Player
 {
     public string Name { get; }

@@ -1,4 +1,6 @@
-namespace ChessGame.Domain;
+using ChessGame.Models;
+
+namespace ChessGame.Game;
 
 public sealed class Board
 {

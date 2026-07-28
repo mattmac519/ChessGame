@@ -1,5 +1,4 @@
-namespace ChessGame.Domain;
-
+namespace ChessGame.Models;
 public sealed class Piece
 {
     public PieceType Type { get; }

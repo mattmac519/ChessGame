@@ -1,5 +1,4 @@
-namespace ChessGame.Domain;
-
+namespace ChessGame.Models;
 public readonly record struct Position(int File, int Rank)
 {
     public bool IsValid()

@@ -1,4 +1,4 @@
-namespace ChessGame.Domain;
+namespace ChessGame.Models;
 
 public enum PieceColor
 {
