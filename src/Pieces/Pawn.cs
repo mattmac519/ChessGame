@@ -22,7 +22,7 @@ public sealed class Pawn : Piece
         int rankDifference = to.Rank - from.Rank;
 
         bool oneSquare = fileDifference == 0 && 
-                         rankDifference == 1 * direction;
+                         rankDifference == direction;
 
         bool twoSquares = fileDifference == 0 && 
                           rankDifference == 2 * direction &&
