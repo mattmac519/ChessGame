@@ -4,7 +4,7 @@ namespace ChessGame.Pieces;
 
 public sealed class Queen : Piece
 {
-    public Queen (PieceColor color) : base(color)
+    public Queen(PieceColor color) : base(color)
     {
     }
 
