@@ -31,6 +31,36 @@ public sealed class MoveValidator
             return false;
         }
 
-        return piece.IsValidMovement(move.From, move.To);
+        if (!piece.IsValidMovement(move.From, move.To))
+        {
+            return false;
+        }
+
+        if (piece is Knight)
+        {
+            return true;
+        }
+
+        return IsPathClear(board, move);
+    }
+
+    private static bool IsPathClear(Board board, Move move)
+    {
+        int fileStep = Math.Sign(move.To.File - move.From.File);
+        int rankStep = Math.Sign(move.To.Rank - move.From.Rank);
+
+        var current = new Position(move.From.File + fileStep, move.From.Rank + rankStep);
+
+        while (current != move.To)
+        {
+            if (board.GetPiece(current) is not null)
+            {
+                return false;
+            }
+
+            current = new Position(current.File + fileStep, current.Rank + rankStep);
+        }
+
+        return true;
     }
 }
