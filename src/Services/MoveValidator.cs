@@ -41,6 +41,11 @@ public sealed class MoveValidator
             return true;
         }
 
+        if (piece is Pawn && !IsValidPawnMove(board, move))
+        {
+            return false;
+        }
+
         return IsPathClear(board, move);
     }
 
@@ -62,5 +67,18 @@ public sealed class MoveValidator
         }
 
         return true;
+    }
+
+    private static bool IsValidPawnMove(Board board, Move move)
+    {
+        bool isMovinStraight = move.From.File == move.To.File;
+        Piece? targetPiece = board.GetPiece(move.To);
+
+        if (isMovinStraight)
+        {
+            return targetPiece is null;
+        }
+
+        return targetPiece is not null;
     }
 }
