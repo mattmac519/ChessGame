@@ -31,4 +31,38 @@ public sealed class Board
 
         _squares[position.File, position.Rank] = piece;
     }
+
+    public Piece? MovePiece(Move move)
+    {
+        if (!move.IsValid)
+        {
+            throw new ArgumentException(
+                "The move contains invalid positions.", 
+                nameof(move));
+        }
+
+        Piece? movingPiece = GetPiece(move.From);
+
+        if (movingPiece is null)
+        {
+            throw new InvalidOperationException(
+                $"There is no piece at {move.From}.");
+        }
+
+        Piece? capturedPiece = GetPiece(move.To);
+
+        if (capturedPiece?.Color == movingPiece.Color)
+        {
+            throw new InvalidOperationException(
+                "A piece cannot capture another piece of the same color.");
+        }
+
+        _squares[move.To.File, move.To.Rank] = movingPiece;
+        _squares[move.From.File, move.From.Rank] = null;
+
+        movingPiece.MarkAsMoved();
+
+        return capturedPiece;
+        
+    }
 }
