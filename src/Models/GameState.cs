@@ -8,7 +8,7 @@ public sealed class GameState
     public PieceColor CurrentTurn { get; private set; }
     public GameStatus Status { get; private set; }
 
-    public GameState(Player whitePlayer, Player blackPlayer)
+    public GameState(Player whitePlayer, Player blackPlayer, Board board)
     {
         if (whitePlayer.Color != PieceColor.White)
         {
@@ -24,7 +24,7 @@ public sealed class GameState
                 nameof(blackPlayer));
         }
 
-        Board = new Board();
+        Board = board;
         WhitePlayer = whitePlayer;
         BlackPlayer = blackPlayer;
         CurrentTurn = PieceColor.White;
